@@ -77,7 +77,6 @@ class ShakeWorker (appContext: Context, workerParams: WorkerParameters):
         }
         override fun onAccuracyChanged(sensor: Sensor, accuracy: Int) {}
     }
-
     private fun triggerCall() {
         val i= Intent(context,EmergencyActivity::class.java)
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -100,8 +99,6 @@ class ShakeWorker (appContext: Context, workerParams: WorkerParameters):
             v.vibrate(1000)
         }
     }
-
-
 
 
 }
